@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Amrit Mazumder - Resume</title>
+        <link rel='stylesheet' type='text/css' href='resume_style.css'/>
+		<link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/6eeca118-1406-41bb-8907-ea4709690d3f.css"/>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script src="resume_js/waypoints.min.js" type="text/javascript"></script>		
+		<script src="resume_js/jquery.fittext.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+		
+		$(document).ready(function(){ 
+			
+			//OPENING CONTENT ABOUT FREELANCE
+			
+			$(".slide_white").waypoint(function(){
+						$("body").css("background","#f6f6f6")
+						$(".slide_white hr").addClass("hr_active");
+						$(".slide_white .section_header").addClass("section_header_active");
+						$(".slide_white .job_title").addClass("job_title_active");
+						$(".slide_white .dates").addClass("dates_active");
+						$(".slide_white .content").addClass("content_active");
+						$(".slide_white .subtext").addClass("subtext_active");
+						$(".slide_white .skills").addClass("skills_active");
+						$(".slide_white .skill_box").addClass("skill_box_active");
+						$(".arrow").css("border-top","0px");
+						},{offset: 0});
+			
+			//REANIMATES OPENING CONTENT ON SCROLLING UPWARDS
+			
+			$(".slide_white").waypoint(function(){
+						$(this).css("opacity","1");
+						$("body").css("background","#f6f6f6")
+						$(".slide_white hr").toggleClass("hr_active");
+						$(".slide_white .section_header").toggleClass("section_header_active");
+						$(".slide_white .job_title").toggleClass("job_title_active");
+						$(".slide_white .dates").toggleClass("dates_active");
+						$(".slide_white .content").toggleClass("content_active");
+						$(".slide_white .subtext").toggleClass("subtext_active");
+						$(".slide_white .skills").toggleClass("skills_active");
+						$(".slide_white .skill_box").toggleClass("skill_box_active");
+						},{
+						  offset: function() {
+						    return -$(this).height();
+						  }});
+			
+			//CHANGES BODY BG TO RED on SCROLL DOWN
+			
+			$(".slide_red").waypoint(function(){
+						$("body").css("background","#ff5656");
+						},{offset: 0});				
+		
+			//ANIMATES R+K INFO on SCROLL DOWN
+			$(".slide_red").waypoint(function(){
+						
+						$(".firstleft hr").addClass("hr_active");
+						$(".firstleft .section_header").addClass("section_header_active");
+						$(".firstleft .job_title").addClass("job_title_active");
+						$(".firstleft .dates").addClass("dates_active");
+						$(".firstleft .content").addClass("content_active");
+						$(".firstleft .subtext").addClass("subtext_active");
+						$(".firstleft .skills").addClass("skills_active");
+						$(".firstleft .skill_box").addClass("skill_box_active");
+						
+						
+						},{offset: 0});
+			
+	
+			//CHANGES BODY BG TO RED on SCROLL UP
+			//ANIMATES R+K INFO on SCROLL UP
+			
+			$(".firstleft").waypoint(function(){
+						
+					
+						
+						
+						$("body").css("background","#ff5656");
+						},
+						{
+						  offset: function() {
+						    return -$(this).height();
+						  }});	
+				
+				
+				//CHANGES BODY BG TO WHITE on SCROLL DOWN
+				//ANIMATES CMYK INFO on SCROLL DOWN		  
+				$(".secondleft").waypoint(function(){
+							$(".firstleft hr").toggleClass("hr_active");
+							$(".firstleft .section_header").toggleClass("section_header_active");
+							$(".firstleft .job_title").toggleClass("job_title_active");
+							$(".firstleft .dates").toggleClass("dates_active");
+							$(".firstleft .content").toggleClass("content_active");
+							$(".firstleft .subtext").toggleClass("subtext_active");
+							$(".firstleft .skills").toggleClass("skills_active");
+							$(".firstleft .skill_box").toggleClass("skill_box_active");
+							
+							
+							$("body").css("background","#f6f6f6");
+							$(".secondleft hr").addClass("hr_active");
+							$(".secondleft .section_header").addClass("section_header_active");
+							$(".secondleft .job_title").addClass("job_title_active");
+							$(".secondleft .dates").addClass("dates_active");
+							$(".secondleft .content").addClass("content_active");
+							$(".secondleft .subtext").addClass("subtext_active");
+							$(".secondleft .skills").addClass("skills_active");
+							$(".secondleft .skill_box").addClass("skill_box_active");
+							},{offset: 0});
+			
+				//CHANGES BODY BG TO WHITE on SCROLL UP
+				//ANIMATES CMYK INFO on SCROLL UP
+				$(".column").waypoint(function(){
+						$("body").css("background","#f6f6f6");
+						$(".secondleft hr").toggleClass("hr_active");
+						$(".secondleft .section_header").toggleClass("section_header_active");
+						$(".secondleft .job_title").toggleClass("job_title_active");
+						$(".secondleft .dates").toggleClass("dates_active");
+						$(".secondleft .content").toggleClass("content_active");
+						$(".secondleft .subtext").toggleClass("subtext_active");
+						$(".secondleft .skills").toggleClass("skills_active");
+						$(".secondleft .skill_box").toggleClass("skill_box_active");
+						
+						},{
+						  offset: function() {
+						    return -$(this).height();
+						  }});					
+			
+					//CHANGES BODY BG TO BLACK on SCROLL DOWN
+					//ANIMATES RECO INFO on SCROLL DOWN
+					$(".slide_picture").waypoint(function(){
+							$(this).css("opacity","1");
+							$("body").css("background","#373737")
+							$(".slide_picture .content").addClass("content_active_module");
+					
+							},{offset: "50%"});
+							
+							
+					//CHANGES BODY BG TO BLACK on SCROLL UP
+					//ANIMATES RECO INFO on SCROLL UP		
+					$(".slide_picture").waypoint(function(){
+							$(this).css("opacity","1");
+							$("body").css("background","#373737")
+							$(".slide_picture .content").toggleClass("content_active_module");
+					
+							},{
+							  offset: function() {
+							    return -$(this).height();
+							  }});		
+					
+					
+								  						
+					//CHANGES BODY BG TO WHITE on SCROLL DOWN
+					//ANIMATES RISD INFO on SCROLL DOWN	
+					$(".risd").waypoint(function(){
+						$(this).css("opacity","1");
+						$("body").css("background","#f6f6f6");
+						$(".risd hr").addClass("hr_active");
+						$(".risd .section_header").addClass("section_header_active");
+						$(".risd .job_title").addClass("job_title_active");
+						$(".risd .dates").addClass("dates_active");
+						$(".risd .content").addClass("content_active");
+						$(".risd .subtext").addClass("subtext_active");
+						$(".risd .skills").addClass("skills_active");
+						$(".risd .skill_box").addClass("skill_box_active");
+						
+						},{offset: "10%"});
+						
+					//ANIMATES RISD INFO on SCROLL UP	
+					$(".risd").waypoint(function(){
+						$(this).css("opacity","1");
+						$("body").css("background","#f6f6f6");
+						$(".risd hr").toggleClass("hr_active");
+						$(".risd .section_header").toggleClass("section_header_active");
+						$(".risd .job_title").toggleClass("job_title_active");
+						$(".risd .dates").toggleClass("dates_active");
+						$(".risd .content").toggleClass("content_active");
+						$(".risd .subtext").toggleClass("subtext_active");
+						$(".risd .skills").toggleClass("skills_active");
+						$(".risd .skill_box").toggleClass("skill_box_active");
+						
+						},{
+						  offset: function() {
+						    return -$(this).height();
+						  }});		
+						
+						//ANIMATES TISB INFO on SCROLL DOWN		
+						$(".tisb").waypoint(function(){
+									$(this).css("opacity","1");
+									$("body").css("background","#f6f6f6");
+									$(".tisb hr").addClass("hr_active");
+									$(".tisb .section_header").addClass("section_header_active");
+									$(".tisb .job_title").addClass("job_title_active");
+									$(".tisb .dates").addClass("dates_active");
+									$(".tisb .content").addClass("content_active");
+									$(".tisb .subtext").addClass("subtext_active");
+									$(".tisb .skills").addClass("skills_active");
+									$(".tisb .skill_box").addClass("skill_box_active");
+									},{offset: "50%"});
+					
+					//ANIMATES TISB INFO on SCROLL UP
+					$(".tisb").waypoint(function(){
+								$(this).css("opacity","1");
+								$("body").css("background","#f6f6f6");
+								$(".tisb hr").toggleClass("hr_active");
+								$(".tisb .section_header").toggleClass("section_header_active");
+								$(".tisb .job_title").toggleClass("job_title_active");
+								$(".tisb .dates").toggleClass("dates_active");
+								$(".tisb .content").toggleClass("content_active");
+								$(".tisb .subtext").toggleClass("subtext_active");
+								$(".tisb .skills").toggleClass("skills_active");
+								$(".tisb .skill_box").toggleClass("skill_box_active");
+								},{
+								  offset: function() {
+								    return -$(this).height();
+								  }});
+					
+					//ANIMATES INTERESTS INFO on SCROLL DOWN
+								$(".slide_red2").waypoint(function(){
+											$("body").css("background","#ff5656")
+											$(this).css("opacity","1");
+											$(".slide_red2 hr").addClass("hr_active");
+											$(".slide_red2 .section_header").addClass("section_header_active");
+											$(".slide_red2 .job_title").addClass("job_title_active");
+											$(".slide_red2 .dates").addClass("dates_active");
+											$(".slide_red2 .content").addClass("content_active");
+											$(".slide_red2 .subtext").addClass("subtext_active");
+											$(".slide_red2 .skills").addClass("skills_active");
+											$(".slide_red2 .skill_box").addClass("skill_box_active");
+										
+										$(".jquiz").css("color","#373737");
+										$(".htmarkup").css("color","#373737");
+										$(".photoshop").css("color","#373737");	
+										$(".illustrator").css("color","#373737");
+										$(".branding").css("color","#373737");	
+										$(".advertising").css("color","#373737");
+										$(".uid").css("color","#373737");
+										$(".ux").css("color","#373737");
+										$(".gd").css("color","#373737");
+										$(".brand_dev").css("color","#373737");	
+										$(".eship").css("color","#373737");	
+										$(".startups").css("color","#373737");
+										
+											},{offset: "30%"});
+		
+								
+								
+						$(".first_trigger").waypoint(function(){
+								$(".jquiz").animate({ color: "#f6f6f6" }, 500);
+								$(".htmarkup").animate({ color: "#f6f6f6" }, 500);
+								$(".photoshop").animate({ color: "#f6f6f6" }, 500);
+								$(".illustrator").css("color","#373737");
+								$(".branding").css("color","#373737");	
+								$(".advertising").css("color","#373737");
+								$(".uid").animate({ color: "#f6f6f6" }, 500);
+								$(".ux").animate({ color: "#f6f6f6" }, 500);
+								$(".gd").animate({ color: "#f6f6f6" }, 500);
+								$(".brand_dev").css("color","#373737");	
+								$(".eship").css("color","#373737");	
+								$(".startups").css("color","#373737");
+								$(".icon_section").css("visibility","visible");
+								$(".icon_section").css("background-position","35px 90px");
+									
+									},{offset: 0});		
+								
+				$(".second_trigger").waypoint(function(){
+					$(".jquiz").css("color","#373737");
+					$(".htmarkup").css("color","#373737");
+					$(".photoshop").css("color","#373737");	
+					$(".illustrator").css("color","#373737");
+					$(".branding").css("color","#373737");	
+					$(".advertising").css("color","#373737");
+					$(".uid").css("color","#373737");
+					$(".ux").css("color","#373737");
+					$(".gd").animate({ color: "#f6f6f6" }, 500);
+					$(".brand_dev").animate({ color: "#f6f6f6" }, 500);
+					$(".eship").animate({ color: "#f6f6f6" }, 500);
+					$(".startups").animate({ color: "#f6f6f6" }, 500);
+					$(".icon_section").css("background-position","-350px 90px");								
+					},{offset: 0});	
+			
+			$(".third_trigger").waypoint(function(){
+				$(".jquiz").css("color","#373737");
+				$(".htmarkup").css("color","#373737");
+				$(".photoshop").css("color","#f6f6f6");
+				$(".illustrator").animate({ color: "#f6f6f6" }, 500);
+				$(".branding").animate({ color: "#f6f6f6" }, 500);
+				$(".advertising").animate({ color: "#f6f6f6" }, 500);
+				$(".uid").css("color","#373737");
+				$(".ux").css("color","#373737");
+				$(".gd").animate({ color: "#f6f6f6" }, 500);
+				$(".brand_dev").animate({ color: "#f6f6f6" }, 500);
+				$(".eship").css("color","#373737");	
+				$(".startups").css("color","#373737");	
+				$(".icon_section").css("background-position","-760px 90px");								
+				},{offset: 0});			
+					
+		
+		
+		
+		
+		$.fn.followTo = function ( pos ) {
+		    var $this = this,
+		        $window = $(window);
+		
+		    $window.scroll(function(e){
+		        if ($window.scrollTop() > pos) {
+		            $this.css({
+		                position: 'absolute',
+		                top: pos
+		            });
+		        } else {
+		            $this.css({
+		                position: 'fixed',
+		                top: 0
+		            });
+		        }
+		    });
+		};
+		
+		$.fn.startAndFollowTo = function ( pos ) {
+		    var $this = this,
+		        $window = $(window);
+		
+		    $window.scroll(function(e){
+		        if (pos  <= $window.scrollTop()) {
+		            $this.css({
+		                position: 'fixed',
+		                top: 0
+		            });
+		        }
+		    
+		              else {
+		            $this.css({
+		                position: 'absolute',
+		                top: pos
+		            });
+		        }
+		    });
+		    $window.scroll(function(e){
+		        if (pos + $this.height()  < $window.scrollTop()) {
+		            $this.css({
+		                position: 'absolute',
+		                top: pos + $this.height()
+		            });
+		        }
+		    
+		        
+		    });
+		};
+		
+		$('.full_width').followTo(470);		
+		$('.firstleft').startAndFollowTo(1600);
+		$('.secondleft').startAndFollowTo(3050);	
+		
+		$('.skill_section').startAndFollowTo(8200);
+		$('.interest_section').startAndFollowTo(9250);
+		$('.icon_section').startAndFollowTo(9250);
+		
+		jQuery(".full_width").fitText();
+		 $(".full_width").lettering();
+				 
+				 
+								 	
+		});
+	</script>
+	</head>
+	
+	
+	<body>
+    	<div class="arrow"></div>
+    	<div class="base_container1 opening">
+    		<div class="central">
+    			<p class="full_width"><strong>resume</strong></p>
+    		</div>
+    	</div>
+    	
+    	<div class="base_container1 slide_white">
+    			<div class="central">
+    			<div class="seal">a</div>
+    			<hr>
+    			<div class="seal">a</div>
+    			<p class="section_header">Experience</p>
+    			<p class="job_title">Freelance Designer and Consultant</p>
+    			<p class="dates">August 2012 - Present</p>
+    			<p class="content">Created collateral for a venture capital firm based out of
+    			Bangalore, India. Created Identity mockups for a Boston based
+    			design firm. Designed mock user interfaces for an online
+    			education platform. Currently beginning work on designing a
+    			user interface for a startup based in Bangalore, India.</p>
+    		
+    		
+    			<div class="skill_box">Adobe Photoshop   /   Adobe Illustrator   /   Brand Development</div>
+    		
+    			</div></div>
+    	
+		
+		
+		<div class="base_container1 slide_red">
+		<div class="central">
+			<div class="seal">a</div>
+	
+				<div class="double firstleft">
+					<p class="section_header">Experience</p>
+					<p class="job_title">Summer Intern at Ray + Keshavan | The Brand Union</p>
+					<p class="dates">June 2012 - July 2012</p>
+					<p class="content large">Spent six weeks as a creative and Marketing Intern
+					at Ray and Keshavan/The Brand Union. Worked on
+					designing identity and creative collateral for a
+					leading global IT firm headquartered in India,
+					leaders in the Indian Food Industry and a reputed
+					global frontrunner in the Wine and Spirits Industry.</p>
+			
+					
+					<div class="skill_box">Adobe Photoshop   /   Adobe Illustrator   /   Brand Development</div>
+				</div>
+			
+				
+			<div class="double column">
+			
+			
+			<img src="resume_img/TBU_logo.png" />
+			<img src="http://guapodepalco.files.wordpress.com/2009/12/3741076997_3fd3ef6a08.jpg?w=500&h=375" />
+			
+			<p class="subtext">Due to confidentiality agreements, materials available upon request</p>
+			
+			<img src="resume_img/CMYK.png" class="cmyk_img" />
+			<img src="http://amritmazumder.com/img/talaash/fulllogo.jpg" />
+			<img src="http://amritmazumder.com/img/LVB/4.jpg" />
+			<img src="http://amritmazumder.com/img/vivum/poster2.jpg" />			
+			
+			</div>
+		
+			<div class="double secondleft">
+		
+			<div class="seal">a</div>
+				<p class="section_header">Experience</p>
+				<p class="job_title">CMYK Dynamic</p>
+				<p class="dates">June 2012 - July 2012</p>
+				<p class="content">Spent six weeks as a creative and Marketing Intern
+				at Ray and Keshavan/The Brand Union. Worked on
+				designing identity and creative collateral for a
+				leading global IT firm headquartered in India,
+				leaders in the Indian Food Industry and a reputed
+				global frontrunner in the Wine and Spirits Industry.</p>
+				
+				
+				<div class="skill_box">Adobe Photoshop   /   Adobe Illustrator   /   Brand Development</div>
+			
+		</div>
+		
+			
+		</div></div>
+	
+
+<div class="base_container1 slide_picture">
+
+		<div class="seal">a</div>
+		
+		<div class="picture_text_unit"><p class="content"><strong>"Amrit was a formidable contributor across his internship - so much so, that most of us forgot that he was an intern and still in college!"</strong></p>
+		<p class="subtext">Meghna Prasad<br>CEO, Ray + Keshavan | TBU</p>
+		</div></div>
+	
+
+
+<div class="base_container1 slide_white2 risd">
+		<div class="central">
+		<div class="seal">a</div>
+		<hr>
+		<div class="seal">a</div>
+		<p class="section_header">Education</p>
+		<p class="job_title">Rhode Island School of Design</p>
+		<p class="dates">Bachelor of Arts, Graphic Design</p>
+		<p class="dates">2011 - 2015</p>
+		<p class="dates"><br><br><strong>TED Active | Mobile Project</strong></p>
+		
+		<p class="content">Worked with a team to create a presentation on
+		the future of mobile technology and the importance of
+		creating humane experiences for TED Active 2013.</p>
+	
+		
+		<div class="skill_box">Adobe Photoshop   /   Adobe Illustrator   /   
+		User Experience Design</div>
+	
+		</div></div>
+	
+	
+	<div class="base_container1 slide_white2 tisb">
+		<div class="central">
+		<div class="seal">a</div>
+		
+		
+		<p class="section_header">Education</p>
+		<p class="job_title">The International School Bangalore</p>
+		<p class="dates">International Baccalaureate Diploma</p>
+		<p class="dates">2009 - 2011</p>
+		
+		
+		
+	
+		
+		<div class="skill_box">Elected Deputy Head Boy<br><br>Attended Harvard University
+		Model United Nations
+		Conference 2010.</div>
+		<div class="skill_box">Appointed Design
+		Administrator at Vivum 2010<br><br>Attended Dhirubhai Ambani
+		International School Model
+		United Nations 2009</div>
+	<div class="skill_box">Participated in the PolyU
+	Innovation and
+	Entrepreneurship Global
+	Student Challenge at Hong
+	Kong Polytechnic University</div>
+	
+		</div></div>
+
+<div class="base_container1 slide_red2">
+	<div class="central">
+		<div class="seal">a</div>
+			<div class="double skill_section">
+				<hr>
+				<p class="section_header">Skills</p>
+				
+				<div class="skill_box"><div class="gd">Graphic Design</div>
+									  <div class="photoshop"> Adobe Photoshop</div>	
+										<div class="illustrator">Adobe Illustrator</div>
+										<div class="brand_dev">Brand Development </div>
+										<div class="htmarkup">HTML / CSS</div>
+										<div class="jquiz">jQuery</div>		
+				
+				
+				
+				
+				
+				</div>	</div>	
+			
+			
+			<div class="double interest_section">
+			<hr>
+			<p class="section_header">Interests</p>
+			<div class="skill_box">
+				<div class="uid">User Interface Design </div>
+			<div class="ux">User Experience</div>
+			<div class="eship">	Entrepreneurship</div>
+			<div class="startups">	Startups </div>
+				<div class="branding">Branding</div>
+				<div class="advertising">Advertising</div>
+			
+					</div></div>	
+		
+		
+		<div class="double icon_section">
+		
+		
+		
+				</div></div>				
+		
+					
+		
+		
+		<div class="double social_section">
+				<div class="first_trigger"></div>
+				<div class="second_trigger"></div>
+				<div class="third_trigger"></div>		
+
+	</div>
+	
+</div>
+<div class="ending"><p class="ending_text"><strong>thank you</strong></p>
+
+<div class="socialicons"><a href="http://www.linkedin.com/pub/amrit-mazumder/47/165/6b6"><img src="resume_img/linkedin.png" /></a></div>
+<div class="socialicons"><a href="http://www.behance.net/amritm"><img src="resume_img/behance.png" /></div>
+<div class="socialicons"><a href="https://twitter.com/amritmaz"><img src="resume_img/twitter.png" /></a></div>
+
+</div>
+	</body>
+</html>
